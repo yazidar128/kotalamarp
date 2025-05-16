@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOTALAMA RP - Beranda</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #0f0f0f;
+        color: #f8f9fa;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .navbar {
+        background-color: #1a1a1a;
+      }
+
+      .hero {
+        position: relative;
+        background: url("banner-rp.jpg") no-repeat center center/cover;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .btn-main {
+        background-color: #ffc107;
+        color: #000;
+        font-weight: bold;
+      }
+
+      .section-title {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .icon-box {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 30px;
+        transition: 0.3s;
+      }
+
+      .icon-box:hover {
+        background-color: #292929;
+      }
+
+      .icon-box i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #ffc107;
+      }
+
+      footer {
+        background-color: #1a1a1a;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="index.html"
+          >KOTALAMA RP</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="panduan.html">Panduan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-warning ms-3" href="daftar.html">Whitelist</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content text-white">
+        <h1>Selamat Datang di KOTALAMA RP</h1>
+        <p class="lead mt-3">
+          Pengalaman roleplay terbaik di Indonesia — Siap menjadi legenda kota?
+        </p>
+        <a href="daftar.html" class="btn btn-main btn-lg mt-4"
+          >Daftar Whitelist</a
+        >
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title text-warning">Fitur Unggulan Kami</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="icon-box">
+              <i class="bi bi-controller"></i>
+              <h5 class="mt-2">Roleplay Realistis</h5>
+              <p>
+                Nikmati dunia RP dengan sistem yang kompleks, dinamis, dan
+                mendalam layaknya kehidupan nyata.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon-box">
+              <i class="bi bi-people-fill"></i>
+              <h5 class="mt-2">Komunitas Solid</h5>
+              <p>
+                Pemain aktif setiap hari, admin responsif, dan forum diskusi
+                yang selalu ramai dan membantu.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon-box">
+              <i class="bi bi-briefcase-fill"></i>
+              <h5 class="mt-2">Job & Fraksi Lengkap</h5>
+              <p>
+                Gabung LSPD, mafia, EMS, atau jadi pengusaha sukses — pilihan RP
+                kamu tanpa batas!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center py-5 bg-dark">
+      <div class="container">
+        <h2 class="text-warning mb-3">Siap Bergabung dengan KOTALAMA?</h2>
+        <p class="mb-4">
+          Klik tombol di bawah ini dan isi whitelist untuk memulai perjalananmu!
+        </p>
+        <a href="daftar.html" class="btn btn-warning btn-lg">Daftar Sekarang</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white">
+      <div class="container">
+        <p class="mb-1">&copy; 2025 KOTALAMA RP - All rights reserved.</p>
+        <p>Follow us on Discord & Instagram</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
